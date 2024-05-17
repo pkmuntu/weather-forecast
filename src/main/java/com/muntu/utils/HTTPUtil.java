@@ -25,7 +25,7 @@ public class HTTPUtil {
     public static String connection(String pUrl, String pPayload, String pMethodType, Map<String, String> pHeaders) throws IOException, KeyManagementException, NoSuchAlgorithmException, InterruptedException {
         String response;
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://forecast9.p.rapidapi.com/rapidapi/forecast/46.95828/10.87152/summary/"))
+                .uri(URI.create(pUrl))
                 .header("X-RapidAPI-Key", pHeaders.get("X-RapidAPI-Key"))
                 .header("X-RapidAPI-Host", pHeaders.get("X-RapidAPI-Host"))
                 .method("GET", HttpRequest.BodyPublishers.noBody())

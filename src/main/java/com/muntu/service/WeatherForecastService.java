@@ -70,11 +70,11 @@ public class WeatherForecastService {
     }
 
     private String buildSummeryURl(String baseURL, String latitude,String longitude) {
-        return baseURL + latitude+"/"+ longitude + "/summary";
+        return baseURL + latitude+"/"+ longitude + "/summary/";
     }
 
     private String buildHourlyURl(String baseURL, String latitude,String longitude) {
-        return baseURL+ latitude+"/"+ longitude +  "/hourly";
+        return baseURL+ latitude+"/"+ longitude +  "/hourly/";
     }
 
 }
